@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mubasshir's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+    .about {
+      background-color: #f5f5f5; /* just for visibility */
+    }
+  </style>
+</head>
+<body>
+  <!-- ===== Nav Bar ===== -->
+  <nav>
+    <div class="logo">
+      <h4>Portfolio</h4>
+    </div>
+    <ul class="nav-links">
+      <a href="Index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </ul>
+
+    <a href="Mubasshir_Khan_Resume.pdf" download="mubasshir_resume.pdf">
+      <button class="classy-button">Resume</button>
+    </a>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's me</h3>
+      <h1>Mubasshir</h1>
+      <h3>And I'm a <span class="typing"></span></h3>
+      <p>
+        I'm a Data Engineer passionate about building scalable data pipelines, 
+        transforming raw data into insights, and creating modern data solutions.
+      </p>
+    </div>
+
+    <div class="home-img">
+      <div class="img-border">
+        <img src="mk.jpg" alt="Mubasshir">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>
+      I am Mubasshir, a Data Engineer who enjoys working on 
+      Snowflake, DBT, Airflow, and building end-to-end data pipelines.
+    </p>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <p>My recent projects will go here...</p>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>You can reach me at: <b>mubasshir@example.com</b></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
