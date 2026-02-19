@@ -51,3 +51,44 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// ===== CONTACT FORM FUNCTIONALITY =====
+
+const contactForm = document.getElementById("contactForm");
+const formStatus = document.getElementById("formStatus");
+const sendBtn = document.getElementById("sendBtn");
+
+contactForm.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  sendBtn.disabled = true;
+  sendBtn.textContent = "Sending...";
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  try {
+     await fetch("https://script.google.com/macros/s/AKfycbzh7X6rxi0PTa7DUqsKeTEcEWOEk93qaPfOW9wWSKMSUgQpONdZBirVuMAmQ4UpqMRp/exec", {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    formStatus.style.color = "#00ff99";
+  formStatus.textContent = "✅ Message Sent Successfully!";
+  contactForm.reset();
+
+} catch (error) {
+  formStatus.style.color = "red";
+  formStatus.textContent = "❌ Error sending message.";
+}
+
+  sendBtn.disabled = false;
+  sendBtn.textContent = "Send Message";
+});
