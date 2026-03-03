@@ -55,8 +55,10 @@
       <h1>Mubasshir</h1>
       <h3>And I'm a <span class="typing"></span></h3>
       <p>
-        I'm a Data Engineer passionate about building scalable data pipelines, 
-        transforming raw data into insights, and creating modern data solutions.
+        I’m a versatile Software Engineer with a background in Computer Science, 
+        specializing in Full Stack Development and Data Engineering. 
+        I build scalable systems, design robust backend architectures, 
+        and transform complex data into impactful, business-driven solutions.
       </p>
     </div>
 
@@ -71,16 +73,85 @@
   <section class="about" id="about">
     <h2>About Me</h2>
     <p>
-      I am Mubasshir, a Data Engineer who enjoys working on 
-      Snowflake, DBT, Airflow, and building end-to-end data pipelines.
+    
     </p>
   </section>
 
   <!-- ===== PROJECTS SECTION ===== -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <p>My recent projects will go here...</p>
-  </section>
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+
+  <!-- ===== Data Engineering Projects ===== -->
+  <div class="project-category">
+    <h3 class="project-heading">Data Engineering Projects</h3>
+
+    <div class="project-card" onclick="openModal('leadTrackingModal')">
+      <h4>Lead Tracking System</h4>
+      <p>
+        Built an end-to-end ELT pipeline using Snowflake, DBT, and Airflow.
+        Designed scalable data models and automated transformations for business analytics.
+      </p>
+    </div>
+
+    <!-- Add more Data Engineering projects here -->
+  </div>
+
+
+  <!-- ===== Full Stack Development Projects ===== -->
+  <div class="project-category">
+    <h3 class="project-heading">Full Stack Development Projects</h3>
+
+    <div class="project-card">
+      <h4>Best Find Firm</h4>
+      <p>
+        Developed a full-stack web application with modern UI, secure backend APIs,
+        authentication system, and database integration.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h4>Hospital Management System</h4>
+      <p>
+        Developed a full-stack web application with modern UI, secure backend APIs,
+        authentication system, and database integration.
+      </p>
+    </div>
+    <!-- Add more Full Stack projects here -->
+  </div>
+
+</section>
+<!-- ===== LEAD TRACKING MODAL ===== -->
+<div id="leadTrackingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('leadTrackingModal')">&times;</span>
+
+    <h2>Lead Tracking System</h2>
+
+    <p><strong>Project Overview:</strong></p>
+    <p>
+      Designed and implemented an end-to-end data pipeline integrating
+      PostgreSQL, Snowflake, DBT, and Apache Airflow.
+    </p>
+
+    <p><strong>Tech Stack:</strong></p>
+    <ul>
+      <li>Snowflake</li>
+      <li>DBT</li>
+      <li>Apache Airflow</li>
+      <li>Python</li>
+      <li>PostgreSQL</li>
+    </ul>
+
+    <p><strong>Key Features:</strong></p>
+    <ul>
+      <li>Automated ELT pipeline</li>
+      <li>Incremental DBT models</li>
+      <li>Data quality validation</li>
+      <li>CI/CD integration using GitLab</li>
+    </ul>
+
+  </div>
+</div>
 
   <!-- ===== CONTACT SECTION ===== -->
 <section class="contact" id="contact">

@@ -1,4 +1,8 @@
-const text = ["Data Engineer", "Problem Solver", "Software Engineer"];
+const text = [
+  "Full Stack Developer",
+  "Data Engineer",
+  "Software Engineer"
+];
 let index = 0;
 let charIndex = 0;
 let currentText = "";
@@ -91,4 +95,28 @@ contactForm.addEventListener("submit", async function (e) {
 
   sendBtn.disabled = false;
   sendBtn.textContent = "Send Message";
+});
+
+/* =========================
+   MODAL SYSTEM (FINAL)
+========================= */
+
+function openModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+window.addEventListener("click", function (event) {
+  const modal = document.querySelector(".modal.active");
+  if (modal && event.target === modal) {
+    modal.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
 });
